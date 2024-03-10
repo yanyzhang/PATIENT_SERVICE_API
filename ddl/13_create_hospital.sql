@@ -1,0 +1,4 @@
+-- hospital
+-- employee
+-- manager
+-- department
