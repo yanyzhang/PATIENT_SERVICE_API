@@ -10,6 +10,6 @@ CREATE TABLE IF NOT EXISTS Public."hospital" (
     "State" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
     "ZipCode" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
     -- TODO: // add encryption
-    "PhoneNumber" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
+    "HospitalPhoneNumber" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT hopistal_pkey PRIMARY KEY ("HospitalID")
 )
