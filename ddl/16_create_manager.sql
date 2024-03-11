@@ -7,3 +7,4 @@ CREATE TABLE IF NOT EXISTS Public."manager" (
     "EmployeePhoneNumber" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL -- reference to employee id phone number
     CONSTRAINT mananger_pkey PRIMARY KEY ("ManagerID")
 )
+
