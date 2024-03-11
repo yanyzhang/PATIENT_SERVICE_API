@@ -1,3 +1,4 @@
+# Following now shown or saved on Github
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -142,7 +143,7 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
-.dbsecret.json
+.dbsecret.json/
 
 # Pyre type checker
 .pyre/
