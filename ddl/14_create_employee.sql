@@ -21,3 +21,4 @@ CREATE TABLE IF NOT EXISTS Public."employee" (
     "EmployeePhoneNumber" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT employee_pkey PRIMARY KEY ("EmployeeID")
 )
+
