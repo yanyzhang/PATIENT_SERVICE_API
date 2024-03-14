@@ -1,8 +1,10 @@
 # app.py to print a message 
 '''
 Author: Yan
-Purpose:
-Date:
+contact: yanyzhang1@gmail.com
+Copyright: Copyright 2024"
+Status: "Development"
+Version: "0.0.1"
 
 
 '''
@@ -15,15 +17,12 @@ app = FastAPI()
 async def root():
     return {"message": "Hello World"}
 
-@app.get("/users")
-async def get_users():
-    return [
-        {
-            "firstName": "Yan",
-            "lastName": "Zhang",
-            "email": "yanyzhang1@gmail.com"
-        }
-
-    ]
+@app.get("/patients/:PatientRecordNumber")
+async def get_patients() -> list(PatientSchema):
+    db_session = SessionMaker().get_session_maker()
+    with db_session.begin() as session:
+        patients= session.query(Patient).all()
+        
+        return patients
 
 
