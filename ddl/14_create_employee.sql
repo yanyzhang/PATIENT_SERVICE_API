@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS Public."employee" (
     "HiredDate" DATE,
     "Birthday" DATE,
     "Title" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
-    "Department" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
+    "DepartmentName" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
     "Salary" DECIMAL(9, 2),
     "Bonus" DECIMAL(9, 2),
     "StreetNumber" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
@@ -18,7 +18,6 @@ CREATE TABLE IF NOT EXISTS Public."employee" (
     "City" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
     "State" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
     "ZipCode" INT,
-    -- TODO: // add encryption
-    "EmployeePhoneNumber" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL
+    "EmployeePhoneNumber" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT employee_pkey PRIMARY KEY ("EmployeeID")
 )
