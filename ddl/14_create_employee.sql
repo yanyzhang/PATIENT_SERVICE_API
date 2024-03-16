@@ -9,6 +9,7 @@ CREATE TABLE IF NOT EXISTS Public."employee" (
     "Gender" CHARACTER VARYING COLLATE pg_catalog."default",
     "HiredDate" DATE,
     "Birthday" DATE,
+    "Ssn" CHARACTER VARCHAR COLLATE pg_catalog."default" NOT NULL,
     "Title" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
     "Level" CHARACTER VARCHAR COLLATE pg_catalog."default",
     "DepartmentName" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
@@ -20,6 +21,7 @@ CREATE TABLE IF NOT EXISTS Public."employee" (
     "State" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
     "ZipCode" INT,
     "EmployeePhoneNumber" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
-    CONSTRAINT employee_pkey PRIMARY KEY ("EmployeeID")
+    CONSTRAINT employee_pkey PRIMARY KEY ("EmployeeID"),
+
 )
 
