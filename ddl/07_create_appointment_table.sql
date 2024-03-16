@@ -15,6 +15,6 @@ CREATE TABLE IF NOT EXISTS Public."appointment" (
     "PhysicianID" BIGINT NOT NULL,
     "StartDateTime" TIMESTAMPTZ NOT NULL,
     "EndDateTime" TIMESTAMPTZ NOT NULL,
-    "ExamRoomID" INT,
+    "RoomID" INT,
     CONSTRAINT appointment_pkey PRIMARY KEY ("AppointmentID")
 )

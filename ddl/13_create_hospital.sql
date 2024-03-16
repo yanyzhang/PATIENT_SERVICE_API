@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS Public."hospital" (
         INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 9223372036854775807 CACHE 1
     ),
     "FullName" CHARACTER VARYING COLLATE pg_catalog."default",
-    "StreetNumber" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
+    "StreetNumber" SMALLINT,
     "StreetName" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
     "City" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
     "State" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,

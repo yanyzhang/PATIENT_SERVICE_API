@@ -5,11 +5,11 @@ CREATE TABLE IF NOT EXISTS Public."manager" (
     "FirstName" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
     "MiddleName" CHARACTER VARYING COLLATE pg_catalog."default",
     "LastName" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
-    "DepartmentID" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,  --reference to name of department
+    "DepartmentID" BIGINT NOT NULL,  --reference to name of department
     "DepartmentName" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
-    "RoomID" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL, --reference to roomID of the room table
-    "RoomPhoneNumber" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL,
-    "EmployeePhoneNumber" CHARACTER VARYING COLLATE pg_catalog."default" NOT NULL, -- reference to employee id phone number
+    "RoomID" SMALLINT NOT NULL, --reference to roomID of the room table
+
+
     CONSTRAINT manager_pkey PRIMARY KEY ("ManagerID")
 )
 
